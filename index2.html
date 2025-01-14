@@ -103,13 +103,13 @@
             border-radius: 4px;
         }
 
-        .notification-time {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            font-size: 12px;
-            color: #999;
-            margin-left: auto;
+
+        .notification-icon img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
         }
 
         .unread .notification-content h4 {
@@ -145,7 +145,7 @@
 <body>
     <div class="notifications">
         <div class="notifications-header">
-            <h2>Notifications</h2>
+            <h2><b>Notifications</b></h2>
             <span>View all</span>
         </div>
         <div class="notifications-tabs">
@@ -153,7 +153,9 @@
             <div class="notifications-tab">Mentions</div>
         </div>
         <div class="notification-item unread">
-            <div class="notification-icon" style="background-image: url('https://via.placeholder.com/50'); background-size: cover;"></div>
+            <div class="notification-icon" style="background-image: url('https://via.placeholder.com/50'); background-size: cover;">
+                <img src="https://cdn.pixabay.com/photo/2023/12/22/20/57/ai-generated-8464364_960_720.jpg" alt="User Profile" style="width: 50px; height: 50px; border-radius: 50%;">
+            </div>
             <div class="notification-content">
                 <h4>Mark Huberton sent you a message<span class="blue-circle"></span></h4>
                 <p>Hey Leo, how's the project you're working...</p>
@@ -167,21 +169,29 @@
                 <p style="background-color: #fff; padding: 10px; border-radius: 5px;">Today 09:30 AM<span style="margin-left: 90px;"></span>Feb 16, 2023</p>
             </div>
         </div>
-        <div class="notification-item">
-            <div class="notification-icon" style="background-image: url('https://via.placeholder.com/50'); background-size: cover;"></div>
+
+
+        <div class="notification-item unread">
+            <div class="notification-icon" style="background-image: url('https://via.placeholder.com/50'); background-size: cover;">
+                <img src="https://images.all-free-download.com/images/graphiclarge/orange_515681.jpg" alt="User Profile" style="width: 50px; height: 50px; border-radius: 50%;">
+            </div>
             <div class="notification-content">
                 <h4>You have a new response from Liza <span class="blue-circle"></span>Mcguire</h4>
                 <p style="background-color: #fff; padding: 10px; border-radius: 5px;">Today 09:30 AM<span style="margin-left: 90px;"></span>Feb 16, 2023</p>
             </div>
         </div>
-        <div class="notification-item">
-            <div class="notification-icon" style="background-image: url('https://via.placeholder.com/50'); background-size: cover;"></div>
+
+        <div class="notification-item unread">
+            <div class="notification-icon" style="background-image: url('https://via.placeholder.com/50'); background-size: cover;">
+                <img src="https://images.all-free-download.com/images/graphiclarge/nature_picture_ladybug_leaf_closeup_6930245.jpg" alt="User Profile" style="width: 50px; height: 50px; border-radius: 50%;">
+            </div>
             <div class="notification-content">
                 <h4>Anna Flinks sent you a message<span class="blue-circle"></span></h4>
                 <p>Awesome!!!!!</p>
                 <p style="background-color: #fff; padding: 10px; border-radius: 5px;">Today 09:30 AM<span style="margin-left: 90px;"></span>Feb 16, 2023</p>
             </div>
-        </div>
+        </div>    
     </div>
+
 </body>
 </html>
